@@ -99,7 +99,7 @@ var createEntry = function (date, options) {
         if (response.statusCode === 201) {
             console.log("Entry created on date: " + date);
         } else {
-            console.dir("Couldn't create entry on date: " + date);
+            console.log("Couldn't create entry on date:", date, "Status code:", response.statusCode);
         }
     });
 }
